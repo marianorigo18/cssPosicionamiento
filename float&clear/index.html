@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+    <style>
+        *{
+            font-family: 'PT Sans', sans-serif;
+        }
+        img{
+            width: 300px;
+            border: 1px solid black;
+        }
+        p{
+            margin: 5px;
+            border: 1px solid black;
+        }
+        .uno{
+            width: 800px;
+            border: 5px solid black;
+            margin: 2px;
+            background-color: lightblue;
+        }
+        .dos{
+            width: 800px;
+            height: 300px;
+            border: 5px solid black;
+            margin: 2px;
+            background-color: lightcoral;
+        }
+        .dos img{
+            float: left;
+        }
+        .tres{
+            width: 800px;
+            height: 300px;
+            border: 5px solid black;
+            margin: 2px;
+            background-color: lightsalmon;
+        }
+        .tres img{
+            float: right;
+        }
+        .cuatro{
+            width: 800px;
+            border: 5px solid black;
+            margin: 2px;
+            background-color: lightslategray;
+        }
+        .cuatro img{
+            float: left;
+        }
+        .cuatro p{
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS: Float & Clear</h1>
+        <h5>float - clear = left</h5>
+        <h5>float - clear = right</h5>
+        <h5>float - clear = none</h5>
+        <h5>clear = both</h5>
+        <h5>¿Que hace la propiedad float?</h5>
+        <p>Nos pemite hacer flotar las cosas a izquierda o a derecha, y todo el contenido que esta a su alrededor se acomode segun el espacio disponible</p>
+    </header>
+    <div class="uno">
+        <h2>float: none;</h2>
+        <img src="http://www.sectorelectricidad.com/wp-content/uploads/2020/07/mas-carros-100x100-electricos-mueven-a-colombia2.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusantium rem id enim voluptas animi delectus nesciunt provident, officiis rerum, doloribus odio molestias, quo tempore corporis atque quaerat mollitia maiores.
+        Magni fugit ea quod, cumque incidunt tempora ipsa enim repudiandae corporis molestias amet fuga porro praesentium quasi illum. Molestiae esse doloremque consectetur tempora minima excepturi odio facilis magnam nesciunt temporibus?
+        Tenetur aliquam culpa sapiente vitae libero, expedita repellendus, porro.</p>
+    </div>
+    <div class="dos">
+        <h2>float: left;</h2>
+        <img src="http://www.sectorelectricidad.com/wp-content/uploads/2020/07/mas-carros-100x100-electricos-mueven-a-colombia2.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusantium rem id enim voluptas animi delectus nesciunt provident, officiis rerum, doloribus odio molestias, quo tempore corporis atque quaerat mollitia maiores.
+            Magni fugit ea quod, cumque incidunt tempora ipsa enim repudiandae corporis molestias amet fuga porro praesentium quasi illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum deserunt quas nisi quibusdam eveniet, adipisci veniam? Tenetur eveniet, voluptas inventore velit beatae ut aliquam magnam, blanditiis harum sequi corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem harum sunt quasi, reprehenderit culpa itaque minus commodi eaque vero quidem molestiae autem, illo architecto fuga obcaecati fugiat voluptas veritatis sequi.</p>
+    </div>
+    <h5>Aqui cuando le decimos float left osea vete a la izquierda a la imagen, la imagen flota a la izquierda en el HTML y lo que hay a su alrededor se acomoda de acuerdo al lugar que hay, y lo mismo para para el float right</h5>
+    <div class="tres">
+        <h2>float: right</h2>
+        <img src="http://www.sectorelectricidad.com/wp-content/uploads/2020/07/mas-carros-100x100-electricos-mueven-a-colombia2.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusantium rem id enim voluptas animi delectus nesciunt provident, officiis rerum, doloribus odio molestias, quo tempore corporis atque quaerat mollitia maiores.
+            Magni fugit ea quod, cumque incidunt tempora ipsa enim repudiandae corporis molestias amet fuga porro praesentium quasi illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum deserunt quas nisi quibusdam eveniet, adipisci veniam? Tenetur eveniet, voluptas inventore velit beatae ut aliquam magnam, blanditiis harum sequi corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem harum sunt quasi, reprehenderit culpa itaque minus commodi eaque vero quidem molestiae autem, illo architecto fuga obcaecati fugiat voluptas veritatis sequi.</p>
+    </div>
+    <h5>Cuando flotamos un elemento, los contenidos o demas elementos hermanos van a fluir alrededor de ese elemento,tomando en cierta forma el logar que deja.En cierta forma deja cierto espaci que es tomado por los elementos hermanos que fluyen dentro de su mismo flujo o a su alrededor.</hh>
+    <div class="cuatro">
+        <h2>float: right with clear </h2>
+        <img src="http://www.sectorelectricidad.com/wp-content/uploads/2020/07/mas-carros-100x100-electricos-mueven-a-colombia2.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusantium rem id enim voluptas animi delectus nesciunt provident, officiis rerum, doloribus odio molestias, quo tempore corporis atque quaerat mollitia maiores.
+            Magni fugit ea quod, cumque incidunt tempora ipsa enim repudiandae corporis molestias amet fuga porro praesentium quasi illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum deserunt quas nisi quibusdam eveniet, adipisci veniam? Tenetur eveniet, voluptas inventore velit beatae ut aliquam magnam, blanditiis harum sequi corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem harum sunt quasi, reprehenderit culpa itaque minus commodi eaque vero quidem molestiae autem, illo architecto fuga obcaecati fugiat voluptas veritatis sequi.</p>
+    </div>
+    <h5>La propiedad clear se usa para controlar el comportamiento de los elementos que siguen a los elemetos flotados, es decir no dejandolos flotar hacia donde nosotros hagamos el float</h5>
+    <h5>¿Cuando es compatible clear?</h5>
+    <h5>solamente cuando le declaramos un valor que es igual a la orientacion del float, osea si float es right entonces clear tenemos que asignarle right si no no funcionara.</h5>
+    <h5>ejemplo, la imagen de arriba tiene un float left que se hace ver como el cuadro rojo, pero cuando le damos al parrafo un clear left queda como por defecto, en este caso parece que no hay cambios pero cuando haya muchos elementos esta propiedad sera muy util</h5>
+</body>
+</html>
